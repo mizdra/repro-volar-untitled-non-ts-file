@@ -1,0 +1,47 @@
+{
+  "name": "vscode-css-modules",
+  "displayName": "vscode-css-modules",
+  "description": "The VS Code extension for CSS Modules",
+  "version": "0.0.0",
+  "type": "module",
+  "author": "mizdra <pp.mizdra@gmail.com>",
+  "publisher": "mizdra",
+  "license": "MIT",
+  "private": true,
+  "main": "./src/index.cjs",
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:css"
+  ],
+  "contributes": {
+    "typescriptServerPlugins": [
+      {
+        "name": "typescript-plugin-css-modules",
+        "configNamespace": "typescript",
+        "languages": [
+          "css"
+        ]
+      }
+    ],
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "typescript.openTsServerLog",
+          "when": "editorLangId == css"
+        },
+        {
+          "command": "typescript.restartTsServer",
+          "when": "editorLangId == css"
+        }
+      ]
+    }
+  },
+  "dependencies": {
+    "typescript-plugin-css-modules": "../ts-plugin"
+  }
+}

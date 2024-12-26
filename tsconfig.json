@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    // module options
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+
+    // output options
+    "target": "ESNext",
+    "noEmit": true,
+
+    // type checking options
+    "strict": true,
+    "checkJs": true,
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+
+    // other options
+    "isolatedModules": true,
+    "verbatimModuleSyntax": false,
+  }
+}

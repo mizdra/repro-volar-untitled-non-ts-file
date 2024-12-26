@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Start extension in VS Code",
+      "type": "extensionHost",
+      "request": "launch",
+      "args": [
+        "--extensionDevelopmentPath=${workspaceFolder}/packages/vscode",
+        "--profile-temp",
+        "--disable-extension=vscode.css-language-features",
+        "--skip-welcome",
+        "--folder-uri=${workspaceFolder}/packages/example",
+        "${workspaceFolder}/packages/example/a.module.css"
+      ]
+    }
+  ]
+}

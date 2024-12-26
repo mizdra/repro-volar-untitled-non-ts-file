@@ -1,0 +1,12 @@
+{
+  "name": "typescript-plugin-css-modules",
+  "type": "module",
+  "main": "./src/index.cjs",
+  "license": "CC0-1.0",
+  "private": true,
+  "scripts": {},
+  "dependencies": {
+    "@volar/language-core": "~2.4.11",
+    "@volar/typescript": "~2.4.11"
+  }
+}

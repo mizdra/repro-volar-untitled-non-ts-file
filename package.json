@@ -1,0 +1,17 @@
+{
+  "name": "playground-volar-vscode-extension-on-ts-plugin",
+  "type": "module",
+  "license": "CC0-1.0",
+  "private": true,
+  "scripts": {},
+  "workspaces": [
+    "packages/ts-plugin",
+    "packages/vscode",
+    "packages/example"
+  ],
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/vscode": "^1.96.0",
+    "typescript": "^5.7.2"
+  }
+}
