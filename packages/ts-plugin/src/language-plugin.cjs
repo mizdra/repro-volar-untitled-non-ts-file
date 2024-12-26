@@ -18,8 +18,7 @@ exports.createCssModuleLanguagePlugin = function createCssModuleLanguagePlugin()
       const length = snapshot.getLength();
       const cssModuleText = snapshot.getText(0, length);
       const { text: dtsText, mapping } = createDts(cssModuleText);
-      console.log(dtsText);
-      console.log(JSON.stringify(mapping));
+      console.log('Virtual code is created: ' + dtsText.replaceAll('\n', '\\n'));
       return {
         id: 'main',
         languageId: LANGUAGE_ID,
