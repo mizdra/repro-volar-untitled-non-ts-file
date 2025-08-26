@@ -42,6 +42,6 @@
     }
   },
   "dependencies": {
-    "typescript-plugin-css-modules": "../ts-plugin"
+    "typescript-plugin-css-modules": "*"
   }
 }
