@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {},
   "dependencies": {
-    "@volar/language-core": "~2.4.11",
-    "@volar/typescript": "~2.4.11"
+    "@volar/language-core": "~2.4.23",
+    "@volar/typescript": "~2.4.23"
   }
 }
