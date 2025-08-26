@@ -1,13 +1,13 @@
 /// <reference types="@volar/typescript" />
 
-const ts = require('typescript/lib/tsserverlibrary');
+import ts from 'typescript/lib/tsserverlibrary.js';
 
 const LANGUAGE_ID = 'css-module';
 
 /**
  * @returns {import('@volar/language-core').LanguagePlugin<string>}
  */
-exports.createCssModuleLanguagePlugin = function createCssModuleLanguagePlugin() {
+export function createCssModuleLanguagePlugin() {
   return {
     getLanguageId(scriptId) {
       if (scriptId.endsWith('.module.css')) return LANGUAGE_ID;
