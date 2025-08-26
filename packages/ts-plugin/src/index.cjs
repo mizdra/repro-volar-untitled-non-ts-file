@@ -1,8 +1,7 @@
-const { createAsyncLanguageServicePlugin } = require('@volar/typescript/lib/quickstart/createAsyncLanguageServicePlugin.js');
+const { createLanguageServicePlugin } = require('@volar/typescript/lib/quickstart/createLanguageServicePlugin.js');
 const { createCssModuleLanguagePlugin } = require('./language-plugin.cjs');
-const ts = require('typescript');
 
-module.exports = createAsyncLanguageServicePlugin(['.css'], ts.ScriptKind.TS, async (ts, info) => {
+module.exports = createLanguageServicePlugin((ts, info) => {
   return {
     languagePlugins: [createCssModuleLanguagePlugin()],
   };
