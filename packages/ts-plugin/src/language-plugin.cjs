@@ -21,7 +21,7 @@ exports.createCssModuleLanguagePlugin = function createCssModuleLanguagePlugin()
       console.log('Virtual code is created: ' + dtsText.replaceAll('\n', '\\n'));
       return {
         id: 'main',
-        languageId: LANGUAGE_ID,
+        languageId: 'typescript',
         snapshot: {
           getText: (start, end) => dtsText.slice(start, end),
           getLength: () => dtsText.length,
